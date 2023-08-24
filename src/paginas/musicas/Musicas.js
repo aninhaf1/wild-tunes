@@ -48,7 +48,7 @@ function Musicas() {
             <DivPrincipal>
                 <Tags/>
                 <DivCards>
-                    <CardMusica musica='Villan Arc' linkMusica='' artista='Aryy' />
+                    <CardMusica musica='Villan Arc' linkMusica='nomeMusica' artista='Aryy'/>
                     <CardMusica musica='Villan Arc' linkMusica='' artista='Aryy' />
                     <CardMusica musica='Villan Arc' linkMusica='' artista='Aryy' />
                     <CardMusica musica='Villan Arc' linkMusica='' artista='Aryy' />

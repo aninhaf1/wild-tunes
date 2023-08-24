@@ -49,7 +49,7 @@ function Playlists() {
             <DivPrincipal>
                 <Tags/>
                 <DivCards>
-                    <CardPlaylist nome='Good Vibes' link=''/>
+                    <CardPlaylist nome='Good Vibes' link='nome-playlist'/>
                     <CardPlaylist nome='Good Vibes' link=''/>
                     <CardPlaylist nome='Good Vibes' link=''/>
                     <CardPlaylist nome='Good Vibes' link=''/>

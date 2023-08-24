@@ -8,6 +8,8 @@ import Adicionar from "../paginas/adicionar/Adicionar";
 import QuemSomos from "../paginas/quemsomos/QuemSomos";
 import Contato from "../paginas/contato/Contato";
 import Favoritos from "../paginas/favoritos/Favoritos";
+import NomeMusica from "../paginas/nomeMusica/NomeMusica";
+import NomePlaylist from "../paginas/nomePlaylists/NomePlaylist";
 
 
 function Rota() {
@@ -24,6 +26,8 @@ function Rota() {
                 <Route path='quemsomos' element={<QuemSomos/>}/>
                 <Route path='contato' element={<Contato/>}/>
                 <Route path='favoritos' element={<Favoritos/>}/>
+                <Route path='nomeMusica' element={<NomeMusica/>}/>
+                <Route path='nome-playlist' element={<NomePlaylist/>}/>
                 {/* <Route path='*' element={<Erro/>}/> */}
             </Routes>
         </BrowserRouter>
