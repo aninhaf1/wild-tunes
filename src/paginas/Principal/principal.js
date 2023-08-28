@@ -26,7 +26,7 @@ function Home() {
                     <DivQuadro>
                         <Fonte2>Bem-vindo!!</Fonte2>
                         <Estrela1Img src={Estrela1} alt=''></Estrela1Img>
-                        <Texto>Wild Tunes é uma <br/> plataforma criada com o <br/>objetivo de beneficiar<br/> bandas e artistas<br/> independentes, dando a <br/>oportunidade de serem<br/> reconhecidos pelos<br/> consumidores de música.</Texto>
+                        <Texto>Wild Tunes é uma <br/> plataforma de indicação <br/> de músicas, com o objetivo <br/> de beneficiar bandas<br/> e artistas independentes, <br/> facilitando as músicas <br/> de chegarem até você!</Texto>
                         <Estrela2Img src={Estrela2} alt=''></Estrela2Img>
                     </DivQuadro>
                 </Section>

@@ -16,8 +16,8 @@ function Contato() {
     const goToMusicas = () => {
         navegar('/musicas')
     }
-    const goToPlaylists = () => {
-        navegar('/playlists')
+    const goToAlbuns = () => {
+        navegar('/albuns')
     }
     const goToAdicionar = () => {
         navegar('/adicionar')
@@ -39,8 +39,8 @@ function Contato() {
         <TabList >
             <TabList paddingLeft='15px' bg='#F5F2D0' >
             <Tab onClick={goToMusicas}>Músicas</Tab>
-            <Tab onClick={goToPlaylists}>Playlists</Tab>
-            <Tab onClick={goToAdicionar}>Adicionar</Tab>
+            <Tab onClick={goToAlbuns}>Álbuns</Tab>
+            <Tab onClick={goToAdicionar}>Indicar</Tab>
             <Tab onClick={goToQmSomos}>Quem Somos?</Tab>
             </TabList>
             <Tab>Contato</Tab>

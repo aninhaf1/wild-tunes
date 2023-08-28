@@ -11,8 +11,8 @@ function QuemSomos() {
     const goToMusicas = () => {
         navegar('/musicas')
     }
-    const goToPlaylists = () => {
-        navegar('/playlists')
+    const goToAlbuns = () => {
+        navegar('/albuns')
     }
     const goToAdicionar = () => {
         navegar('/adicionar')
@@ -34,8 +34,8 @@ function QuemSomos() {
         <TabList>
             <TabList paddingLeft='15px' bg='#F5F2D0'>
                 <Tab onClick={goToMusicas}>Músicas</Tab>
-                <Tab onClick={goToPlaylists}>Playlists</Tab>
-                <Tab onClick={goToAdicionar}>Adicionar</Tab>
+                <Tab onClick={goToAlbuns}>Álbuns</Tab>
+                <Tab onClick={goToAdicionar}>Indicar</Tab>
             </TabList>
             <Tab>Quem Somos?</Tab>
             <TabList bg='#F5F2D0' width='67.5vw'>

@@ -1,16 +1,17 @@
 import { useNavigate } from "react-router-dom";
 import Header from "../../componets/Header/Header";
 import CaixaTitulo from "../../componets/caixaTitulo/CaixaTitulo";
-import CardMusica from "../../componets/cardMusica/CardMusica";
+import CardAlbum from "../../componets/cardAlbum/cardAlbum";
 import Tags from "../../componets/tags/Tags";
-import { ContainerMusicas, DivCards, DivPrincipal } from "./styled";
+import {ContainerAlbuns, DivCards, DivPrincipal} from './styled'
 import { Tabs, TabList, Tab } from '@chakra-ui/react'
 
 
-function Musicas() {
+function Albuns() {
     const navegar = useNavigate()
-    const goToAlbuns = () => {
-        navegar('/albuns')
+    
+    const goToMusicas = () => {
+        navegar('/musicas')
     }
     const goToAdicionar = () => {
         navegar('/adicionar')
@@ -24,41 +25,39 @@ function Musicas() {
     return(
         <>
         <Header/>
-        <Tabs variant='enclosed' defaultIndex={0} 
+        {/* <NavHorizontal/> */}
+        <Tabs variant='enclosed' defaultIndex={1}
         size='sm' 
         colorScheme='white' 
         color='#5C582C' 
         border='#5C582C' 
-        opacity='0.8'
-        >
-            <TabList>
+        opacity='0.8'>
+        <TabList>
             <TabList paddingLeft='15px' bg='#F5F2D0'>
+                <Tab onClick={goToMusicas}>Músicas</Tab>
             </TabList>
-            <Tab >Músicas</Tab>
+            <Tab>Álbuns</Tab>
             <TabList bg='#F5F2D0' width='100vw'>
-                <Tab onClick={goToAlbuns}>Álbuns</Tab>
                 <Tab onClick={goToAdicionar}>Indicar</Tab>
                 <Tab onClick={goToQmSomos}>Quem Somos?</Tab>
                 <Tab onClick={goToContato}>Contato</Tab>
             </TabList>
-            </TabList>
+        </TabList>
         </Tabs>
-        <ContainerMusicas>
-            <CaixaTitulo titulo='Músicas'/>
+        <ContainerAlbuns>
+            <CaixaTitulo titulo='Álbuns'/>
             <DivPrincipal>
                 <Tags/>
                 <DivCards>
-                    <CardMusica musica='Villan Arc' linkMusica='nomeMusica' artista='Aryy'/>
-                    <CardMusica musica='Villan Arc' linkMusica='' artista='Aryy' />
-                    <CardMusica musica='Villan Arc' linkMusica='' artista='Aryy' />
-                    <CardMusica musica='Villan Arc' linkMusica='' artista='Aryy' />
-                    <CardMusica musica='Villan Arc' linkMusica='' artista='Aryy' />
-                    <CardMusica musica='Villan Arc' linkMusica='' artista='Aryy' />
+                    <CardAlbum nome='Good Vibes' link='nome-album' artista='Fulaninha'/>
+                    <CardAlbum nome='Good Vibes' link=''/>
+                    <CardAlbum nome='Good Vibes' link=''/>
+                    <CardAlbum nome='Good Vibes' link=''/>
                 </DivCards>
             </DivPrincipal>
-        </ContainerMusicas>
+        </ContainerAlbuns>
         </>
     )
 }
 
-export default Musicas;
+export default Albuns;

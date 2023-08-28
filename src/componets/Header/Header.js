@@ -25,6 +25,9 @@ function Header() {
     const goToFavoritos = () => {
         navegar('/favoritos')
     }
+    const goToSuaConta = () => {
+        navegar('/sua-conta')
+    }
 
 
     return(
@@ -50,7 +53,7 @@ function Header() {
                     <MenuList color='#F5F2D0' bg='#5C582C' borderColor='#F5F2D0'>
                         <MenuGroup title='Perfil' bg='#5C582C'>
                         <MenuItem onClick={goToFavoritos} bg='#5C582C'>Favoritos</MenuItem>
-                        <MenuItem bg='#5C582C'>Sua Conta </MenuItem>
+                        <MenuItem onClick={goToSuaConta} bg='#5C582C'>Sua Conta </MenuItem>
                         </MenuGroup>
                         <MenuDivider />
                         <MenuGroup bg='#5C582C'>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const DivMusica = styled.article`
+export const DivAlbum = styled.article`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,15 +8,15 @@ export const DivMusica = styled.article`
     flex: none;
 `
 
-export const Nomes = styled.a`
+export const NomeAlbum = styled.a`
     color: #5E5812;
     font-size: 14px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
 `
 
-export const CapaMusica = styled.img`
+export const CapaAlbum = styled.img`
     height: 140px;
     width: 140px;
     object-fit: cover;

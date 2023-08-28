@@ -15,8 +15,8 @@ function Adicionar() {
     const goToMusicas = () => {
         navegar('/musicas')
     }
-    const goToPlaylists = () => {
-        navegar('/playlists')
+    const goToAlbuns = () => {
+        navegar('/albuns')
     }
     const goToQmSomos = () => {
         navegar('/quemsomos')
@@ -38,9 +38,9 @@ function Adicionar() {
         <TabList>
             <TabList paddingLeft='15px' bg='#F5F2D0'>
                 <Tab onClick={goToMusicas}>Músicas</Tab>
-                <Tab onClick={goToPlaylists}>Playlists</Tab>
+                <Tab onClick={goToAlbuns}>Álbuns</Tab>
             </TabList>
-            <Tab>Adicionar</Tab>
+            <Tab>Indicar</Tab>
             <TabList bg='#F5F2D0' width='100vw'>
                 <Tab onClick={goToQmSomos}>Quem Somos?</Tab>
                 <Tab onClick={goToContato}>Contato</Tab>
@@ -48,8 +48,8 @@ function Adicionar() {
         </TabList>
         </Tabs>
         <ContainerAdicionar>
-            <CaixaTitulo titulo="Adicionar"/>
-            <CaixaTexto texto="Para adicionar uma música a nossa plataforma, você precisa estar cadastrado, preencher abaixo com o nome da música e do artista, colocar o link da música e escolher no mínimo 3 tags para identificá-la. As tags dizem respeito ao gênero musical, nacionalidade e outros aspectos da música. Dentro de alguns dias você receberá por email a confirmação que ela foi adicionada. Não esqueça que o WildTunes visa valorizar artistas pequenos e/ou independentes!!"/>
+            <CaixaTitulo titulo="Indicar"/>
+            <CaixaTexto texto="Faça a sua própria indicação na plataforma!! Para isso, você precisa estar cadastrado, preencher abaixo com o nome da música e do artista, colocar o link da música e escolher no mínimo 1 tag para identificá-la. As tags dizem respeito ao gênero musical, nacionalidade e outros aspectos da música. A indicação passará por um processo de revisão e dentro de alguns dias você receberá por email a confirmação que ela foi adicionada a plataforma. Não esqueça que o WildTunes visa valorizar artistas pequenos e/ou independentes!!"/>
             <CaixaInput>
                 <Input titulo='Nome da música:' type='text' placeholder='Escreva aqui o nome da música'/>
                 <Input titulo='Artista:' type='text' placeholder='Escreva aqui o nome do artista'/>
