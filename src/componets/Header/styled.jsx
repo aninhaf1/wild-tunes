@@ -40,6 +40,7 @@ export const ImgPerfil = styled.img`
     border-radius: 50px;
     height: 70px;
     width: 70px;
+    object-fit: cover;
 `
 
 export const DivPerfil = styled.div`

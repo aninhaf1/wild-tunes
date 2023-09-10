@@ -3,6 +3,7 @@ import Header from "../../componets/Header/Header";
 import CaixaTitulo from "../../componets/caixaTitulo/CaixaTitulo";
 import Input from "../../componets/input/Input";
 import { BotaoEntrar, CaixaInput, ContainerCadastro, FazerLogin } from "./styled";
+import HeaderEntrar from "../../componets/Header/HeaderEntrar";
 
 
 function Cadastro() {
@@ -13,7 +14,7 @@ function Cadastro() {
 
     return(
         <>
-        <Header/>
+        <HeaderEntrar/>
         <ContainerCadastro>
             <CaixaTitulo titulo='Cadastro'/>
             <CaixaInput>

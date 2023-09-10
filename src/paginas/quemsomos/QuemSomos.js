@@ -38,7 +38,7 @@ function QuemSomos() {
                 <Tab onClick={goToAdicionar}>Indicar</Tab>
             </TabList>
             <Tab>Quem Somos?</Tab>
-            <TabList bg='#F5F2D0' width='67.5vw'>
+            <TabList bg='#F5F2D0' width='69.75vw'>
                 <Tab onClick={goToContato}>Contato</Tab>
             </TabList>
         </TabList>

@@ -13,6 +13,9 @@ function CardMusica(props) {
             </Nomes>
             <Nomes>{props.artista}</Nomes>
         </DivMusica>
+        
+
+
         </>
     )
 }

@@ -20,13 +20,16 @@ function Header() {
     const navegar = useNavigate()
     
     const goBack = () => {
-        navegar('/')
+        navegar('/home')
     }
     const goToFavoritos = () => {
         navegar('/favoritos')
     }
     const goToSuaConta = () => {
         navegar('/sua-conta')
+    }
+    const logOff = () => {
+        navegar('/')
     }
 
 
@@ -57,7 +60,7 @@ function Header() {
                         </MenuGroup>
                         <MenuDivider />
                         <MenuGroup bg='#5C582C'>
-                        <MenuItem bg='#5C582C'>Sair</MenuItem>
+                        <MenuItem bg='#5C582C' onClick={logOff}>Sair</MenuItem>
                         </MenuGroup>
                     </MenuList>
                     </Menu>

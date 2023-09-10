@@ -11,6 +11,7 @@ import Favoritos from "../paginas/favoritos/Favoritos";
 import NomeMusica from "../paginas/nomeMusica/NomeMusica";
 import NomeAlbum from "../paginas/nomeAlbum/NomeAlbum";
 import SuaConta from "../paginas/suaConta/SuaConta";
+import Entrada from "../paginas/entrada/Entrada";
 
 
 function Rota() {
@@ -18,8 +19,9 @@ function Rota() {
     return(
         <BrowserRouter>
             <Routes>
-                <Route index element = {<Home/>}/>
+                <Route index element = {<Entrada/>}/>
                 <Route path='login' element={<Login/>}/>
+                <Route path='home' element={<Home/>}/>
                 <Route path='musicas' element={<Musicas/>}/>
                 <Route path='cadastro' element={<Cadastro/>}/>
                 <Route path='albuns' element={<Playlists/>}/>

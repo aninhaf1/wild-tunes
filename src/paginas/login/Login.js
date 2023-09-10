@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import Header from "../../componets/Header/Header";
 import CaixaTitulo from "../../componets/caixaTitulo/CaixaTitulo";
 import Input from "../../componets/input/Input";
 import { BotaoEntrar, CaixaInput, ContainerLogin, FazerCadastro, Redicionamentos } from "./styled";
+import HeaderEntrar from "../../componets/Header/HeaderEntrar";
 
 
 function Login() {
@@ -13,7 +13,7 @@ function Login() {
 
     return(
         <>
-        <Header/>
+        <HeaderEntrar/>
         <ContainerLogin>
             <CaixaTitulo titulo='Login'/>
             <CaixaInput>

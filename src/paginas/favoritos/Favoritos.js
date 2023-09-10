@@ -65,9 +65,6 @@ function Favoritos() {
                         <CardMusica/>
                         <CardMusica/>
                         <CardMusica/>
-                        <CardMusica/>
-                        <CardMusica/>
-                        <CardMusica/>
                     </Carousel>
                     <Direita onClick={handleRightClick}>
                         <ChevronRightIcon boxSize={10} color='#5C582C' opacity='0.6'/>

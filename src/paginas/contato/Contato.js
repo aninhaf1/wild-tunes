@@ -44,7 +44,7 @@ function Contato() {
             <Tab onClick={goToQmSomos}>Quem Somos?</Tab>
             </TabList>
             <Tab>Contato</Tab>
-            <TabList bg='#F5F2D0' width='59.4vw'>
+            <TabList bg='#F5F2D0' width='61.55vw'>
             </TabList>
         </TabList>
         </Tabs>

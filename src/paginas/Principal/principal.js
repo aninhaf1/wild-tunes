@@ -5,23 +5,13 @@ import Nav from '../../componets/Nav/Nav'
 import { useNavigate } from 'react-router-dom'
 
 function Home() {
-    const navegar = useNavigate()
-    const goToLogin = () => {
-        navegar('/login')
-    }
-    const goCadastro = () => {
-        navegar('/cadastro')
-    }
+    
     
     return(
         <>
         <ContainerHome>
-            <Nav/>
+        <Nav/>
             <DivCentro>
-                <DivBotoes>
-                    <BotoesLogin onClick={goCadastro}>Cadastro</BotoesLogin>
-                    <BotoesLogin onClick={goToLogin}>Login</BotoesLogin>
-                </DivBotoes>
                 <Section>
                     <DivQuadro>
                         <Fonte2>Bem-vindo!!</Fonte2>

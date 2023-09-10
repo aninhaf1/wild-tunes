@@ -5,7 +5,10 @@ export const ContainerHome = styled.main`
 `
 
 export const DivCentro = styled.div`
-    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
 `
 
 export const DivBotoes = styled.div`
