@@ -1,22 +1,17 @@
 import logo from '../../assets/logo.png'
-import flecha from '../../assets/flecha.png'
-import { ContainerHeader, HeaderImage, Fonte2, BotaoVoltar, DivLogo, DivPerfil, ImgPerfil, Texto, Icon, Dropdown } from "./styled"
-import {
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    MenuGroup,
-    MenuDivider
-  } from '@chakra-ui/react'
+import seta from '../../assets/flecha.png'
+import { ContainerHeader, HeaderImage, Fonte2, BotaoVoltar, DivLogo, DivPerfil, ImgPerfil, Texto, Icon, Dropdown, Icon2 } from "./styled"
+import {Menu, MenuButton, MenuList, MenuItem, MenuGroup, MenuDivider } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+
 
 function Header() {
     const user = {
         name: 'user123',
         imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg'
-      };
-
+    };
+    
     const navegar = useNavigate()
     
     const goBack = () => {
@@ -32,6 +27,12 @@ function Header() {
         navegar('/')
     }
 
+    const [flecha, setFlecha] = useState(true);
+
+    const girarFlecha = () => {
+        setFlecha(!flecha);
+    };
+    
 
     return(
         <>
@@ -47,9 +48,13 @@ function Header() {
                     src={user.imageUrl}
                     />
                     <Menu>
-                    <MenuButton as={Texto}>
+                    <MenuButton as={Texto} onClick={girarFlecha}>
                         <Dropdown>
-                            <Icon src={flecha}/> 
+                            {flecha ? (
+                                <Icon src={seta}/>
+                            ) : (
+                                <Icon2 src={seta}/>
+                            )}
                             {user.name}
                         </Dropdown>
                     </MenuButton>

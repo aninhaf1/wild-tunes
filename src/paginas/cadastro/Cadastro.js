@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import Header from "../../componets/Header/Header";
 import CaixaTitulo from "../../componets/caixaTitulo/CaixaTitulo";
 import Input from "../../componets/input/Input";
 import { BotaoEntrar, CaixaInput, ContainerCadastro, FazerLogin } from "./styled";

@@ -19,11 +19,6 @@ export const Caixa = styled.div`
     padding-bottom: 30px;
 `
 
-export const Editar = styled.button`
-    align-self: flex-end;
-    margin-right: 8vw;
-`
-
 export const TituloInput = styled.p`
     color: #F5F2D0;
     font-size: 18px;

@@ -11,27 +11,6 @@ export const DivCentro = styled.div`
     width: 80%;
 `
 
-export const DivBotoes = styled.div`
-    height: 10%;
-    width: 165vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-top: 20px;
-`
-
-export const BotoesLogin = styled.button`
-    height: 40px;
-    width: 120px;
-    border: none;
-    border-radius: 20px;
-    background-color: #5C582C;
-    font-family: 'Galindo', cursive;
-    color: #C1B95D;
-    text-transform: uppercase;
-    margin-right: 10px;
-`
-
 export const Section = styled.section`
     height: 90%;
     display: flex;

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import imagem from '../../assets/tentativa1.png'
 
 export const ContainerEntrada = styled.main`
     display: flex;
@@ -30,27 +29,6 @@ export const Botoes = styled.div`
     gap: 20px;
     margin-top: 90px;
 `
-
-// export const Estrelinha1 = styled.img`
-//     height: 30px;
-//     position: fixed;
-//     left: 140px;
-//     `
-// export const Estrelinha2 = styled.img`
-//     height: 30px;
-//     position: fixed;
-//     right: 140px;
-// `
-// export const Estrelinha3 = styled.img`
-//     height: 30px;
-//     position: fixed;
-//     left: 140px;
-// `
-// export const Estrelinha4 = styled.img`
-//     height: 30px;
-//     position: fixed;
-//     right: 140px;
-// `
 
 export const Logo = styled.img`
     height: 140px;

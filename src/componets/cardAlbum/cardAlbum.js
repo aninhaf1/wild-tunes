@@ -10,9 +10,8 @@ function CardAlbum(props) {
             <NomeAlbum href={props.link}>
                 <CapaAlbum src='https://i.pinimg.com/236x/90/68/05/906805b74d1ca2b5deb1ed561404634d--good-vibes-trippy.jpg'/>
                 {props.nome}
+                <NomeAlbum>{props.artista}</NomeAlbum>
             </NomeAlbum>
-            <NomeAlbum>{props.artista}</NomeAlbum>
-
         </DivAlbum>
         </>
     )

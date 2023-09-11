@@ -26,8 +26,10 @@ export const BotoesNav = styled.button`
     color: #F5F2D0;
     background-color:#5C582C;
     border: 0;
-    padding-top: 30px;
+    margin-top: 30px;
     text-transform: uppercase;
     font-family: 'Galindo', cursive;
-
+    :hover{
+        text-decoration: underline;
+    }
 `

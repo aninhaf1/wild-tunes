@@ -6,7 +6,7 @@ export const ContainerAdicionar = styled.main`
     align-items: center;
 `
 
-export const CaixaInput =styled.div`
+export const CaixaInput =styled.form`
     display: flex;
     width: 50%;
     min-height: 30vh;
@@ -17,6 +17,7 @@ export const CaixaInput =styled.div`
     border-radius: 30px;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 20px;
 `
 
 export const BotaoEnviar = styled.button`
@@ -30,11 +31,4 @@ export const BotaoEnviar = styled.button`
     width: 120px;
     margin-top: 20px;
     margin-left: 380px;
-`
-
-export const FazerCadastro = styled.button`
-    color: #F5F2D0;
-    margin-right: 200px;
-    font-size: 14px;
-    margin-bottom: 20px;
 `

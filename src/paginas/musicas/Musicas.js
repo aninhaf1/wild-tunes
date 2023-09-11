@@ -28,13 +28,13 @@ function Musicas() {
         size='sm' 
         colorScheme='white' 
         color='#5C582C' 
-        border='#5C582C' 
+        border='#5C582C'
         opacity='0.8'
         >
             <TabList>
             <TabList paddingLeft='15px' bg='#F5F2D0'>
             </TabList>
-            <Tab >Músicas</Tab>
+            <Tab>Músicas</Tab>
             <TabList bg='#F5F2D0' width='100vw'>
                 <Tab onClick={goToAlbuns}>Álbuns</Tab>
                 <Tab onClick={goToAdicionar}>Indicar</Tab>

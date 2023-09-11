@@ -52,19 +52,15 @@ function Favoritos() {
                         <ChevronLeftIcon boxSize={10} color='#5C582C' opacity='0.6'/>
                     </Esquerda>
                     <Carousel ref={carrossel}>
-                        <CardMusica/>
-                        <CardMusica/>
-                        <CardMusica/>
-                        <CardMusica/>
-                        <CardMusica/>
-                        <CardMusica/>
-                        <CardMusica/>
-                        <CardMusica/>
-                        <CardMusica/>
-                        <CardMusica/>
-                        <CardMusica/>
-                        <CardMusica/>
-                        <CardMusica/>
+                        <CardMusica musica='Villan Arc' linkMusica='nomeMusica' artista='Aryy'/>
+                        <CardMusica musica='Villan Arc' linkMusica='nomeMusica' artista='Aryy'/>
+                        <CardMusica musica='Villan Arc' linkMusica='nomeMusica' artista='Aryy'/>
+                        <CardMusica musica='Villan Arc' linkMusica='nomeMusica' artista='Aryy'/>
+                        <CardMusica musica='Villan Arc' linkMusica='nomeMusica' artista='Aryy'/>
+                        <CardMusica musica='Villan Arc' linkMusica='nomeMusica' artista='Aryy'/>
+                        <CardMusica musica='Villan Arc' linkMusica='nomeMusica' artista='Aryy'/>
+                        <CardMusica musica='Villan Arc' linkMusica='nomeMusica' artista='Aryy'/>
+                        <CardMusica musica='Villan Arc' linkMusica='nomeMusica' artista='Aryy'/>
                     </Carousel>
                     <Direita onClick={handleRightClick}>
                         <ChevronRightIcon boxSize={10} color='#5C582C' opacity='0.6'/>
@@ -79,16 +75,17 @@ function Favoritos() {
                         <ChevronLeftIcon boxSize={10} color='#5C582C' opacity='0.6'/>
                     </Esquerda>
                     <Carousel ref={carrossel2}>
-                        <CardAlbum/>
-                        <CardAlbum/>
-                        <CardAlbum/>
-                        <CardAlbum/>
-                        <CardAlbum/>
-                        <CardAlbum/>
-                        <CardAlbum/>
-                        <CardAlbum/>
-                        <CardAlbum/>
-                        <CardAlbum/>
+                        <CardAlbum nome='Good Vibes' link='nome-album' artista='Fulaninha'/>
+                        <CardAlbum nome='Good Vibes' link='nome-album' artista='Fulaninha'/>
+                        <CardAlbum nome='Good Vibes' link='nome-album' artista='Fulaninha'/>
+                        <CardAlbum nome='Good Vibes' link='nome-album' artista='Fulaninha'/>
+                        <CardAlbum nome='Good Vibes' link='nome-album' artista='Fulaninha'/>
+                        <CardAlbum nome='Good Vibes' link='nome-album' artista='Fulaninha'/>
+                        <CardAlbum nome='Good Vibes' link='nome-album' artista='Fulaninha'/>
+                        <CardAlbum nome='Good Vibes' link='nome-album' artista='Fulaninha'/>
+                        <CardAlbum nome='Good Vibes' link='nome-album' artista='Fulaninha'/>
+                        <CardAlbum nome='Good Vibes' link='nome-album' artista='Fulaninha'/>
+                        <CardAlbum nome='Good Vibes' link='nome-album' artista='Fulaninha'/>
                         
                     </Carousel>
                     <Direita onClick={handleRightClick2}>

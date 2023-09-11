@@ -1,8 +1,7 @@
-import {ContainerHome, BotoesLogin, DivBotoes, DivQuadro, Section, Fonte2, Estrela1Img, Estrela2Img, Texto, DivCentro} from './styled'
+import {ContainerHome, DivQuadro, Section, Fonte2, Estrela1Img, Estrela2Img, Texto, DivCentro} from './styled'
 import Estrela1 from '../../assets/stars.png'
 import Estrela2 from '../../assets/stars2.png'
 import Nav from '../../componets/Nav/Nav'
-import { useNavigate } from 'react-router-dom'
 
 function Home() {
     

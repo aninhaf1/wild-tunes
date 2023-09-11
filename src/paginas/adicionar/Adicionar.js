@@ -3,15 +3,12 @@ import Header from "../../componets/Header/Header";
 import CaixaTexto from "../../componets/caixaTexto/CaixaTexto";
 import CaixaTitulo from "../../componets/caixaTitulo/CaixaTitulo";
 import Input from "../../componets/input/Input";
-import { BotaoEnviar, CaixaInput, ContainerAdicionar, FazerCadastro } from "./styled";
+import { BotaoEnviar, CaixaInput, ContainerAdicionar } from "./styled";
 import { Tabs, TabList, Tab } from '@chakra-ui/react'
 
 
 function Adicionar() {
     const navegar = useNavigate()
-    const goCadastro = () => {
-        navegar('/cadastro')
-    }
     const goToMusicas = () => {
         navegar('/musicas')
     }
@@ -28,7 +25,6 @@ function Adicionar() {
     return(
         <>
         <Header/>
-        {/* <NavHorizontal/> */}
         <Tabs variant='enclosed' defaultIndex={2}
         size='sm' 
         colorScheme='white' 
@@ -49,7 +45,7 @@ function Adicionar() {
         </Tabs>
         <ContainerAdicionar>
             <CaixaTitulo titulo="Indicar"/>
-            <CaixaTexto texto="Faça a sua própria indicação na plataforma!! Para isso, você precisa estar cadastrado, preencher abaixo com o nome da música e do artista, colocar o link da música e escolher no mínimo 1 tag para identificá-la. As tags dizem respeito ao gênero musical, nacionalidade e outros aspectos da música. A indicação passará por um processo de revisão e dentro de alguns dias você receberá por email a confirmação que ela foi adicionada a plataforma. Não esqueça que o WildTunes visa valorizar artistas pequenos e/ou independentes!!"/>
+            <CaixaTexto texto="Faça a sua própria indicação na plataforma!! Para isso, você precisa preencher abaixo com o nome da música e do artista, colocar o link da música e escolher no mínimo 1 tag para identificá-la. As tags dizem respeito ao gênero musical, nacionalidade e outros aspectos da música. A indicação passará por um processo de revisão e dentro de alguns dias você receberá por email a confirmação que ela foi adicionada a plataforma. Não esqueça que o WildTunes visa valorizar artistas pequenos e/ou independentes!!"/>
             <CaixaInput>
                 <Input titulo='Nome da música:' type='text' placeholder='Escreva aqui o nome da música'/>
                 <Input titulo='Artista:' type='text' placeholder='Escreva aqui o nome do artista'/>
@@ -57,7 +53,6 @@ function Adicionar() {
                 <Input titulo='Tags:' type='' placeholder='Escolha entre as tags disponíveis'/>
                 <Input titulo='Usuário:' type='text' placeholder='Escreva aqui seu nome de usuário'/>
                 <BotaoEnviar>Enviar</BotaoEnviar>
-                <FazerCadastro onClick={goCadastro}>Não tem uma conta? Faça seu cadastro!</FazerCadastro>
             </CaixaInput>
         </ContainerAdicionar>
         
