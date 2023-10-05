@@ -11,13 +11,6 @@ export const DivCentro = styled.div`
     width: 80%;
 `
 
-export const Section = styled.section`
-    height: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
-
 export const DivQuadro = styled.article`
     display: grid;
     grid-template-areas: '. Fonte2 . '
@@ -58,4 +51,24 @@ export const Estrela2Img = styled.img`
 
 export const Texto = styled.p`
     grid-area: p;
+`
+
+export const SideBar = styled.div`
+    position: absolute; 
+    right: 0; 
+    transition: 0.3s; 
+    padding: 15px; 
+    width: 50px; 
+    height: 100%;
+    font-size: 20px;
+    background-color: #C1B95D;
+    overflow-x: hidden;
+    z-index: 1;
+    :hover {
+        width: 180px;
+    }
+    a{
+        display:table-cell; 
+        overflow:hidden;
+    }
 `

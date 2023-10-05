@@ -26,4 +26,17 @@ export const TituloTags = styled.h3`
 export const Texto = styled.p`
     color: #F5F2D0;
     margin-left: 4px;
+    
+`
+
+export const Checkbox = styled.input`
+    /* all: unset; */
+    border-radius: 50%;
+    background-color: #F5F2D0;
+    width: 15px;
+    height: 15px;
+    :checked{
+    background-color: #C1B95D;
+    }
+    
 `

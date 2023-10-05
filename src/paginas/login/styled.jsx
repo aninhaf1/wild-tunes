@@ -29,13 +29,16 @@ export const BotaoEntrar = styled.button`
     text-transform: uppercase;
     height: 40px;
     width: 120px;
-    margin-top: 20px;
-    margin-left: 380px;
+    margin: 20px 90px 0 0;
+    align-self: flex-end;
 `
 
 export const FazerCadastro = styled.button`
     color: #F5F2D0;
     font-size: 14px;
+    :hover{
+        text-decoration: underline;
+    }
 `
 
 export const Redicionamentos = styled.div`

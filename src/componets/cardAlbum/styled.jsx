@@ -5,7 +5,12 @@ export const DivAlbum = styled.article`
     flex-direction: column;
     align-items: center;
     margin-right: 40px;
+    margin-bottom: 2px;
     flex: none;
+    :hover{
+        border-radius: 10px;    
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
 `
 
 export const NomeAlbum = styled.a`

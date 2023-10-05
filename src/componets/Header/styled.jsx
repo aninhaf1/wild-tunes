@@ -60,6 +60,7 @@ export const Icon = styled.img`
     height: 25px;
     width: 30px;
     /* transform: rotate(180deg); */
+    
 `
 export const Icon2 = styled.img`
     height: 25px;

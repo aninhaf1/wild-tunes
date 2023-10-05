@@ -37,4 +37,7 @@ export const FazerLogin = styled.button`
     color: #F5F2D0;
     font-size: 14px;
     margin-right: 270px;
+    :hover{
+        text-decoration: underline; 
+    }
 `
