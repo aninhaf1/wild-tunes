@@ -10,7 +10,7 @@ export const ContainerContato = styled.main`
 export const CaixaLinks = styled.div`
     display: flex;
     flex-direction: column;
-    width: 50%;
+    min-width: 50%;
     min-height: 30vh;
     background-color: #5C582C;
     opacity: 0.60;

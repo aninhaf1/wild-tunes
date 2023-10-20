@@ -56,19 +56,63 @@ export const Texto = styled.p`
 export const SideBar = styled.div`
     position: absolute; 
     right: 0; 
-    transition: 0.3s; 
-    padding: 15px; 
+    padding: 30px 18px 0 18px; 
     width: 50px; 
-    height: 100%;
+    min-height: 100%;
     font-size: 20px;
     background-color: #C1B95D;
-    overflow-x: hidden;
-    z-index: 1;
+    display: flex;
+    flex-direction: column;
     :hover {
-        width: 180px;
+        width: 240px;
+        h3{
+            display:table-cell; 
+        }
+        p{
+            display: table-cell;
+        }
+        a{
+            display: flex;
+        }
+        div{
+            display: none;
+        }
+    }
+    h3{
+        display: none;
+        text-align: center;
+        text-transform: uppercase;
+        color: #F5F2D0;
+        font-size: 20px;
+        
+    }
+    p{
+        display: none;
+        color: #F5F2D0;
+        text-align: center;
+        font-size: 14px;
     }
     a{
-        display:table-cell; 
-        overflow:hidden;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
     }
+    div{
+        position: absolute;
+        top: 48%;
+        right: 0;
+    }
+`
+
+export const CapaPlaylist = styled.img`
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    border-radius: 20px;
+`
+
+export const NomePlaylist = styled.label`
+    font-size: 14px;
+    color: #5E5812
 `

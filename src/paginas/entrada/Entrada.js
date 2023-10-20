@@ -1,18 +1,11 @@
 import { Botoes, BotoesLogin, ContainerEntrada, Logo, PausaImg, ProgressoImg, Sessao, SessaoMeio } from "./styled";
 import logo from '../../assets/logo-verde.png'  
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import tocando from '../../assets/tocando.png';
 import pausa from  '../../assets/pausa.png'
 
 function Entrada() {
-    const navegar = useNavigate()
-    const goToLogin = () => {
-        navegar('/login')
-    }
-    const goCadastro = () => {
-        navegar('/cadastro')
-    }
-    
+        
     const data ={
         clientID: '80cc8182cdc3419fb86b2fbafe1dbffa',
         scopes: 'ugc-image-upload playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public user-read-email user-read-private',
@@ -22,12 +15,7 @@ function Entrada() {
     
     function login (){
         window.location.href = `https://accounts.spotify.com/authorize?response_type=code&client_id=${data.clientID}&scope=${data.scopes}&redirect_uri=${data.redirectURI}`
-    }
-
-    
-
-
-    
+    }    
 
     return(
         <>
@@ -40,8 +28,9 @@ function Entrada() {
                     <PausaImg src={pausa}/>
                 </SessaoMeio>
                 <Botoes>
-                    {/* <BotoesLogin onClick={goCadastro}>Cadastro</BotoesLogin> */}
-                    <BotoesLogin onClick={login}>Entrar com Spotify</BotoesLogin>
+                    <BotoesLogin onClick={login}>
+                        Entrar com Spotify
+                    </BotoesLogin>
                 </Botoes>
             </Sessao>       
         </ContainerEntrada>

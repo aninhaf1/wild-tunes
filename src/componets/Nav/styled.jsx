@@ -18,13 +18,13 @@ export const Fonte1 = styled.h1`
     border-bottom: solid 4px;
     text-transform: uppercase;
     font-size: 33px;
-    
+    text-align: center;
 `
 
 export const BotoesNav = styled.button`
     font-size: x-large;
     color: #F5F2D0;
-    background-color:#5C582C;
+    background-color: transparent;
     border: 0;
     margin-top: 30px;
     text-transform: uppercase;

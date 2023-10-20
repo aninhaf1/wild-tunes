@@ -9,7 +9,7 @@ export const DivMusica = styled.article`
     flex: none;
     :hover{
         border-radius: 10px;    
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 5px 5px 10px #5C582C;
     }
 `
 
