@@ -5,17 +5,18 @@ import tocando from '../../assets/tocando.png';
 import pausa from  '../../assets/pausa.png'
 
 function Entrada() {
-        
     const data ={
         clientID: '80cc8182cdc3419fb86b2fbafe1dbffa',
-        scopes: 'ugc-image-upload playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public user-read-email user-read-private',
+        scopes: 'ugc-image-upload playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public user-read-email user-read-private streaming app-remote-control',
         redirectURI: 'http://localhost:3000/home'
     }
     
     
-    function login (){
-        window.location.href = `https://accounts.spotify.com/authorize?response_type=code&client_id=${data.clientID}&scope=${data.scopes}&redirect_uri=${data.redirectURI}`
-    }    
+    // function login (){
+    //     window.location.href = `https://accounts.spotify.com/authorize?client_id=${data.clientID}&response_type=code&redirect_uri=${data.redirectURI}&scope=${data.scopes}`
+    // }   
+    
+    const AUTH_URL = `https://accounts.spotify.com/authorize?client_id=${data.clientID}&response_type=code&redirect_uri=${data.redirectURI}&scope=${data.scopes}`
 
     return(
         <>
@@ -28,8 +29,13 @@ function Entrada() {
                     <PausaImg src={pausa}/>
                 </SessaoMeio>
                 <Botoes>
-                    <BotoesLogin onClick={login}>
+                    <BotoesLogin 
+                    // onClick={api()}
+                    >
+                        <a href={AUTH_URL}>
+
                         Entrar com Spotify
+                        </a>
                     </BotoesLogin>
                 </Botoes>
             </Sessao>       

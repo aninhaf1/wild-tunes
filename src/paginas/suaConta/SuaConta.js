@@ -1,14 +1,12 @@
-import { ArrowLeftIcon, EditIcon } from "@chakra-ui/icons";
+import { ArrowLeftIcon, DeleteIcon } from "@chakra-ui/icons";
 import Header from "../../componets/Header/Header";
 import CaixaTitulo from "../../componets/caixaTitulo/CaixaTitulo";
-import Input from "../../componets/input/Input";
-import { Caixa, ContainerSuaConta, DivPerfil, EditarPerfil, ImgPerfil, Voltar } from "./styled";
+// import Input from "../../componets/input/Input";
+import { Caixa, ContainerSuaConta, GotoSpotify, Sessao, Titulo, Voltar } from "./styled";
 import { useNavigate } from "react-router-dom";
 import React from "react";
-import EditarEmail from "../../componets/editar/editarEmail";
-import EditarUsuario from "../../componets/editar/editarUsuario";
-import EditarSenha from "../../componets/editar/editarSenha";
-
+import spotify from "../../assets/spotify.png";
+// config do spotify: https://www.spotify.com/br-pt/account/overview/
 
 function SuaConta() {
     const navegar = useNavigate()
@@ -33,22 +31,22 @@ function SuaConta() {
             </Voltar>
             <CaixaTitulo titulo='Sua Conta'/>
             <Caixa>
-                <Input titulo='Email' value={user.email} />
-                <EditarEmail email={user.email}/>
-
-                <Input titulo='Usuário' value={user.name} />
-                <EditarUsuario usuario={user.name}/>       
-
-                <Input titulo='Senha' type='password' value='senha1234'/>
-                <EditarSenha/>
-
-                <DivPerfil>
-                {/* <TituloInput>Foto de perfil</TituloInput> */}
-                <ImgPerfil
-                    src={user.imageUrl}
-                />
-                <EditarPerfil><EditIcon color='#F5F2D0' boxSize={5}/></EditarPerfil>
-                </DivPerfil>
+                <Sessao>
+                    <Titulo>
+                        <h3>Gerenciar conta Spotify</h3>
+                        <img src={spotify}/>
+                    </Titulo>
+                    <p>Gerencie as configurações da sua conta Spotify diretamente no site do Spotify</p>
+                    <GotoSpotify href="https://www.spotify.com/br-pt/account/overview/">Continuar com Spotify</GotoSpotify>
+                </Sessao>
+                <Sessao>
+                    <Titulo>
+                        <h3>Deletar conta</h3>
+                        <DeleteIcon color='#F5F2D0' boxSize={14}/>
+                    </Titulo>
+                    <p>Você pode excluir sua conta no Wild Tunes e todos os seus dados do nosso sistema. Você pode se inscrever novamente mais tarde, a qualquer momento.</p>
+                    <button>Deletar conta</button>
+                </Sessao>
             </Caixa>
             
             

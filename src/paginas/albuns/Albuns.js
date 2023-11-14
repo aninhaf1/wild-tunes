@@ -49,7 +49,7 @@ function Albuns() {
             <DivPrincipal>
                 <Tags/>
                 <DivCards>
-                    <CardAlbum nome='Good Vibes' link='nome-album' artista='Fulaninha'/>
+                    <CardAlbum nome='Get a clue' link='nome-album' artista='Arry'/>
                     <CardAlbum nome='Good Vibes' link=''/>
                     <CardAlbum nome='Good Vibes' link=''/>
                     <CardAlbum nome='Good Vibes' link=''/>

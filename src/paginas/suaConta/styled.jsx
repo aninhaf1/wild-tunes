@@ -8,33 +8,16 @@ export const ContainerSuaConta = styled.main`
 
 export const Caixa = styled.div`
     display: flex;
-    width: 50%;
+    width: 60%;
     min-height: 30vh;
     background-color: #5C582C;
     opacity: 0.60;
     margin: 30px 0px;
     border-radius: 30px;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 30px;
-`
-
-export const TituloInput = styled.p`
-    color: #F5F2D0;
-    font-size: 18px;
-`
-
-export const DivPerfil = styled.div`
-    display: flex;
-    width: 75%;
-    gap: 10px;
-`
-
-export const ImgPerfil = styled.img`
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 30px 0;
+    gap: 20px;
 `
 
 export const Voltar = styled.button`
@@ -42,6 +25,56 @@ export const Voltar = styled.button`
     margin: 10px 0 0 20px;
 `
 
-export const EditarPerfil = styled.button`
-    align-self: flex-end;
+export const Sessao = styled.section`
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 45%;
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: #C1B95D;
+    padding: 10px;
+    p{
+        color: #F5F2D0;
+        font-size: 16px;
+        opacity: 0.9;
+        width: 18vw;
+    }
+    button{
+        color: #C1B95D;
+        font-size: 20px;
+        text-transform: uppercase;
+        align-self: center;
+        margin-top: 8px;
+        :hover{
+            text-decoration: underline;
+            color: red;
+        }
+    }
+    `
+
+export const Titulo = styled.div`
+    display: flex;
+    justify-content: space-between;
+    img{
+        height: 90px;
+    }
+    h3{
+        color: #F5F2D0;
+        font-size: 26px;
+        text-transform: uppercase;
+    }
+    
+    `
+
+export const GotoSpotify = styled.a`
+    color: #C1B95D;
+    text-transform: uppercase;
+    /* justify-self: center; */
+    align-self: center;
+    margin-top: 20px;
+    font-size: 20px;
+    :hover{
+        text-decoration: underline;
+    }
 `

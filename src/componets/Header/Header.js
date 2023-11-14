@@ -8,8 +8,8 @@ import { useState } from 'react'
 
 function Header() {
     const user = {
-        name: 'user123',
-        imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg'
+        name: localStorage.getItem('nome_user'),
+        imageUrl: localStorage.getItem('ft_perfil')
     };
     
     const navegar = useNavigate()
@@ -42,7 +42,7 @@ function Header() {
                 <Fonte2>Wild Tunes</Fonte2>
             </DivLogo>
             <DivLogo>
-                <BotaoVoltar onClick={goBack}>Voltar a tela inicial</BotaoVoltar>
+                {/* <BotaoVoltar onClick={goBack}>Voltar a tela inicial</BotaoVoltar> */}
                 <DivPerfil>
                     <ImgPerfil
                     src={user.imageUrl}

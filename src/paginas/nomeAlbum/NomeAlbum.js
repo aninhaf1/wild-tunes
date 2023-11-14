@@ -35,10 +35,14 @@ function NomeAlbum() {
             </Voltar>
             <DivPrincipal>
                 <Superior>
-                    <CapaAlbum src='https://i.pinimg.com/236x/90/68/05/906805b74d1ca2b5deb1ed561404634d--good-vibes-trippy.jpg'/>
+                    <CapaAlbum src='https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ac/c1/e8/acc1e84f-0098-379c-7058-b8a043dad3f8/artwork.jpg/1200x1200bf-60.jpg'/>
                     <DivTitulo>
-                        <NomeAl>Good Vibes</NomeAl>
-                        <NomeArtista>Fulaninho</NomeArtista>
+                        <NomeAl>Get a clue</NomeAl>
+                        <NomeArtista>Aryy</NomeArtista>
+                        <DivTags>
+                            <Tags>Indie</Tags>
+                            <Tags>Pop</Tags>
+                        </DivTags>
                     </DivTitulo>
                     <DivLike>
                         <Num>{likes}</Num>
@@ -51,10 +55,7 @@ function NomeAlbum() {
                         </button>
                     </DivLike>
                 </Superior>
-                <DivTags>
-                    <Tags>Pop</Tags>
-                    <Tags>Pop</Tags>
-                </DivTags>
+                <iframe src="https://open.spotify.com/embed/album/30Nbc5et4L9a3VAUei2qXh?utm_source=generator" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </DivPrincipal>
         </ContainerNomeAlbum>
         </>

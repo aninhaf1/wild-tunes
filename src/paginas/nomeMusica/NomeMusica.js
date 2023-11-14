@@ -40,23 +40,24 @@ function NomeMusica() {
                     <DivTitulo>
                         <NomeMsc>Villain Arc</NomeMsc>
                         <NomeArtista>Aryy</NomeArtista>
+                        <DivTags>
+                            <Tags>Indie</Tags>
+                            <Tags>Indie</Tags>
+                        </DivTags>
                     </DivTitulo>
                     <DivLike>
                         <Num>{likes}</Num>
                         <button onClick={Favoritar}>
                             {likeVazio ? (
-                            <Like src={coracao}/>
-                            ) : (
-                            <Like src={coracaoLiked}/>
-                            )}
+                                <Like src={coracao}/>
+                                ) : (
+                                    <Like src={coracaoLiked}/>
+                                    )}
                         </button>
                         
                     </DivLike>
                 </Superior>
-                <DivTags>
-                    <Tags>Indie</Tags>
-                    <Tags>Indie</Tags>
-                </DivTags>
+                <iframe  src="https://open.spotify.com/embed/track/3cTXany0VPVP1kNrPBekD2?utm_source=generator" width="50%" height="90" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </DivPrincipal>
         </ContainerNomeMsc>
         </>

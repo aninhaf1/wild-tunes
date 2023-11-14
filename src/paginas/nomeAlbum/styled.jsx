@@ -61,8 +61,12 @@ export const Num = styled.p`
 `
 
 export const DivTags = styled.div`
-    align-self: flex-end;
-    width: 71.2vw;
+    padding-top: 10px;
+    gap: 7px;
+    width: 50vw;
+    display: flex;  
+    flex-wrap: wrap;
+    align-content: flex-start;
 `
 
 export const Tags = styled.button`
@@ -73,8 +77,6 @@ export const Tags = styled.button`
     min-width: 100px;
     border-radius: 25px;
     font-size: 20px;
-    margin-right: 10px;
-    margin-bottom: 10px;
     padding: 8px;
 `
 
